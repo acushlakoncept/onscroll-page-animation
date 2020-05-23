@@ -12,7 +12,7 @@ This project covers the following HTML and CSS3 concepts
 - CSS
 - Google fonts
 - GSAP Library
-- Scroll Magic
+- Scroll Magicad
 
 ## Live Demo
 
@@ -48,3 +48,7 @@ Feel free to check the [issues page](https://github.com/acushlakoncept/onscroll-
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgement
+
+- 'Dev V' YouTube Channel
