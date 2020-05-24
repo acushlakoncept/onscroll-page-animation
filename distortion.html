@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distortion Practice</title>
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(
+        45deg,
+        #ff9a9e 0%,
+        #fad0c4 99%,
+        #fad0c4 100%
+      );
+    }
+
+    .img-wrapper {
+      position: absolute;
+      width: 450px;
+      height: 563px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .video-wrapper {
+      position: absolute;
+      top: 100%;
+      height: 100vh;
+      width: 100%;
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <div class="img-wrapper"></div>
+    <div class="video-wrapper"></div>
+
+    <script src="js/three.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/hover-effect.umd.js"></script>
+    <script>
+      var myAnimation = new hoverEffect({
+        parent: document.querySelector(".img-wrapper"),
+        intensity: 0.3,
+        image1: "images/01.png",
+        image2: "images/02.png",
+        displacementImage: "images/diss.png",
+        imagesRatio: 380 / 304
+      });
+
+      var myAnimation2 = new hoverEffect({
+        parent: document.querySelector(".video-wrapper"),
+        intensity: 0.3,
+        video: true,
+        image1: "videos/video.mp4",
+        image2: "videos/video2.mp4",
+        displacementImage: "images/diss.png"
+      });
+    </script>
+  </body>
+</html>

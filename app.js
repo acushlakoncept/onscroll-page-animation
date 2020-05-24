@@ -206,3 +206,18 @@ document.addEventListener("DOMContentLoaded", () => {
     .setPin(".forth-section")
     .addTo(controller);
 });
+
+
+// INDEX2 JS SCRIPTS
+barba.init({
+
+  sync: true,
+
+  transitions: [{
+    async leave(data) {
+      const done = this.async();
+
+      pageTransition()
+    }
+  }]
+})
